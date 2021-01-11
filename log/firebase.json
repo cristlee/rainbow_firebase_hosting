@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "site": "raibowlog",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "logs",
+          "region": "us-central1"
+        }
+      }
+    ]
+  }
+}
